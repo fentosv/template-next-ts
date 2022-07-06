@@ -13,13 +13,17 @@ _This template allows you to create a NextJS project, and easily deploy it on Gi
 ## Features ✅
 
 - Different NextJS features implementation examples, such as: server side rendering (SSR), layout with dynamic css classes, CSS modules...
-- Support conditionally CSS classes addition [classnames-creator](https://github.com/fentosv/classnames-creator)
-- Sitemap template, using [ekalinin's sitemap library](https://github.com/ekalinin/sitemap.js)
+- Support conditionally CSS classes addition [classnames-creator](https://github.com/fentosv/classnames-creator).
+- [SASS](https://sass-lang.com/) added.
+- Sitemap template, using [ekalinin's sitemap library](https://github.com/ekalinin/sitemap.js).
 - Discord webhook notification on web deployment.
 - Added rimraf to `yarn dev` for cache problems.
 
 **WIP**
 - Navbar with tabs menu on mobile viewports.
+
+### ⚠ Warning ⚠
+This project is using `next/future/image``. This component is still experimental and not covered by semver. For more info, check [NextJS docs](https://nextjs.org/docs/api-reference/next/future/image).
 
 ## Prerequisites 📋
 
