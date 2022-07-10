@@ -26,7 +26,6 @@ const Home: NextPage = () => {
         />
       </Section>
 
-
       <Section width='full' test={true}>
         {/* <Section width='100%'> */}
 
@@ -67,8 +66,6 @@ const Home: NextPage = () => {
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatum, fugit nisi quam officia cum minus error provident quisquam debitis. Ratione fugit rem a nemo sed beatae nisi, iusto maiores!</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatum, fugit nisi quam officia cum minus error provident quisquam debitis. Ratione fugit rem a nemo sed beatae nisi, iusto maiores!</div>
       </Section>
-
-
 
     </Layout>
   )
