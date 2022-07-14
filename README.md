@@ -35,7 +35,7 @@ This project is using `next/future/image``. This component is still experimental
 1. Clone this repo.
 
     ```
-    git clone https://github.com/fentosv/template-nextjs-ts.git
+    git clone https://github.com/fentosv/template-next-ts.git
     ```
 
 2. Install modules.
