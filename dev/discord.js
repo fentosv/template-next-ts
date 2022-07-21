@@ -14,7 +14,7 @@ const DISCORD_VERCEL_URL = process.env.DISCORD_VERCEL_URL
 const DISCORD_USERNAME = process.env.DISCORD_USERNAME
 const DISCORD_AVATAR_URL = process.env.DISCORD_AVATAR_URL
 
-const { version } = require('../package.json');
+const { version, name } = require('../package.json');
 
 const send_discord = (version) => {
     axios.post(
@@ -37,7 +37,7 @@ const send_discord = (version) => {
                         // },
                         // embed title
                         // - link on 2nd row
-                        title: `${version} version released! 🟢`,
+                        title: `${name} ${version} version released! 🟢`,
                         description: `Check it on [Vercel web link](${DISCORD_VERCEL_URL})`,
 
 
