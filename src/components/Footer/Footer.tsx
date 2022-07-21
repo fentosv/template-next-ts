@@ -1,5 +1,5 @@
 import React from 'react'
-
+import classnames from 'classnames-creator'
 
 import s from './Footer.module.scss'
 
@@ -9,17 +9,19 @@ interface Props {
 
 function Footer({ footerClass }: Props) {
 
+    const classes = classnames(
+        s.footer,
+        {
+            [s[footerClass ?? '']]: footerClass,
+        }
+    )
 
     return (
         <React.Fragment>
-            {/* <div className={`footer ${footerClass ? footerClass : ''}`} > */}
-            <footer className={footerClass ? `${s.footer} ${s.footerClass}` : `${s.footer}`} >
+            <footer className={classes} >
                 Footer
             </footer>
-
-
         </React.Fragment>
-
     );
 }
 

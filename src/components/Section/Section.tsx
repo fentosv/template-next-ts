@@ -22,7 +22,7 @@ export default function Section({ children, test = false, width = 'standard', ..
         styles[width],
         {
             [styles.test]: test
-        }, 'hola'
+        }
     )
 
     return (
