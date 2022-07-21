@@ -18,7 +18,15 @@ function Navbar({ navbarClass }: Props) {
 
     return (
         <>
-            <header className={navbarClass ? `${s.navbar} ${s.navbarClass}` : `${s.navbar}`} >
+            <header
+                className={
+                    classnames(
+                        s.navbar,
+                        {
+                            [s[navbarClass ?? '']]: navbarClass
+                        }
+                    )}
+            >
                 <div className={s.navbar_container}>
 
                     <Link href='/'>
