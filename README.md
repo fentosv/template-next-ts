@@ -78,7 +78,7 @@ _For **NextJS** information, go to their [docs](https://nextjs.org/docs)._
 
 3. Add your Git `HTTPS` or `SSH` url to the `.env`.
 
-4. Run the script created for the first deploy. It will set it up the Git with the environment variables.
+4. Run the script created for the first deploy. It will set it up the Git with the environment variables. It accepts `--'{Your commit name}'`, that will change overwrite the `.env` variable for the commit name. 
     ```
     yarn github-first-deploy
     ```
@@ -89,10 +89,21 @@ _For **NextJS** information, go to their [docs](https://nextjs.org/docs)._
     npm github-first-deploy
     ```
 
+    With options:
+    ```
+    yarn github-first-deploy --'Your commit name'
+    ```
+
+    or
+
+    ```
+    npm github-first-deploy --'Your commit name'
+    ```
+
 5. Import Git repositoy in [Vercel](https://vercel.com/new). 
 _At this point, you can get the Vercel project link and add it to the .env file._
 
-6. Update you repository when you want. Vercel will update the Production Deployment when you push the Git repository.
+6. Update you repository when you want. Vercel will update the Production Deployment when you push the Git repository. You can also set a different commit name with `--'{Your commit name}'`. 
 ```yarn github-update```
 or
 ```npm github-update```
