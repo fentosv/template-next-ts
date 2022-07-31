@@ -104,8 +104,8 @@ _For **NextJS** information, go to their [docs](https://nextjs.org/docs)._
 _At this point, you can get the Vercel project link and add it to the .env file._
 
 6. Update you repository when you want. Vercel will update the Production Deployment when you push the Git repository. You can also set a different commit name with `--'{Your commit name}'`. 
-
-```yarn github-update```
+```
+yarn github-update```
 or
 ```npm github-update```
  
