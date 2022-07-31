@@ -16,7 +16,7 @@ const DISCORD_AVATAR_URL = process.env.DISCORD_AVATAR_URL
 
 const { version, name } = require('../package.json');
 
-const send_discord = (version) => {
+const send_discord = () => {
     axios.post(
         DISCORD_WEBHOOK_URL,
         JSON.stringify(
@@ -47,11 +47,11 @@ const send_discord = (version) => {
                         // },
 
                         fields: [
-                            //     {
-                            //         name: 'Name',
-                            //         value: name,
-                            //         inline: true
-                            //     }                    
+                            // {
+                            //     name: 'Name',
+                            //     value: name,
+                            //     inline: true
+                            // }
                         ],
 
                         // footer
@@ -73,16 +73,18 @@ const send_discord = (version) => {
 };
 
 
-const run_discord = () => {
+const run_discord = (success) => {
+    if (!success) console.log("\nSomething went wrong. Check if you are logged into Git.\n");
     if (DISCORD_WEBHOOK_URL && DISCORD_USERNAME) {
-        send_discord(version)
+        // send_discord(version)
+        console.log('\nDiscord sent');
 
     } else {
         console.log("\nDiscord not sent. Missing required fields in .env file.\n");
     }
 }
 
-run_discord()
+module.exports = { run_discord }
 
 
 
