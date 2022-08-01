@@ -1,27 +1,23 @@
 import React from 'react'
-import classnames from 'classnames-creator'
 
 import s from './Footer.module.scss'
+import GitHub from '@components/icons/GitHub';
 
-interface Props {
-    footerClass?: string
-}
+const GitHub_Project_Url = 'https://github.com/fentosv/XXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
-function Footer({ footerClass }: Props) {
-
-    const classes = classnames(
-        s.footer,
-        {
-            [s[footerClass ?? '']]: footerClass,
-        }
-    )
-
+function Footer() {
     return (
-        <React.Fragment>
-            <footer className={classes} >
-                Footer
+        <>
+            <footer className={s.footer} >
+                <div>
+                    <h3>Developed by <a target='_blank' href='https://github.com/fentosv' rel='noopener noreferrer'>Fentos</a></h3>
+                    <h3>Any issues? <a target='_blank' href={`${GitHub_Project_Url}/issues`} rel='noopener noreferrer'>Report them here</a></h3>
+                </div>
+                <a target='_blank' href={GitHub_Project_Url} rel='noopener noreferrer'>
+                    <GitHub />
+                </a>
             </footer>
-        </React.Fragment>
+        </>
     );
 }
 

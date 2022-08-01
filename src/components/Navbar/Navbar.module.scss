@@ -1,8 +1,7 @@
 .navbar {
-  background-color: lightgreen;
-  background-color: lightyellow;
+  background-color: var(--color-dark-1);
+  color: var(--color-light-2);
   padding: 1.4rem 0;
-
 }
 
 .navbar_container {
@@ -20,19 +19,17 @@
   @media (hover: hover) {
     &:hover:not(.navlink--active) {
       text-decoration: underline;
-      font-weight: 600;
     }
   }
 }
 
 .navlink--active {
   font-weight: 600;
-  color: red;
+  // color: var(--color-brand-primary-1);
 }
 
 .navlink--right {
   margin-left: auto;
-  /* color: red; */
 }
 
 .navbar_icon_img {
