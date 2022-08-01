@@ -20,7 +20,7 @@
   @media (hover: hover) {
     &:hover:not(.navlink--active) {
       text-decoration: underline;
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }
