@@ -10,7 +10,7 @@ require('dotenv').config();
 const axios = require('axios');
 
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL
-const DISCORD_VERCEL_URL = 'https://' + process.env.NEXT_PUBLIC_GITHUB_PROJECT_NAME + '.app/'
+const DISCORD_VERCEL_URL = 'https://' + process.env.NEXT_PUBLIC_GITHUB_PROJECT_NAME + '.vercel.app/'
 const DISCORD_USERNAME = process.env.DISCORD_USERNAME
 const DISCORD_AVATAR_URL = process.env.DISCORD_AVATAR_URL
 
