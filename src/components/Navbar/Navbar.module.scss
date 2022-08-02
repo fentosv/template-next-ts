@@ -24,8 +24,13 @@
 }
 
 .navlink--active {
-  font-weight: 600;
-  // color: var(--color-brand-primary-1);
+  filter: brightness(0.8);
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: default;
+    }
+  }
 }
 
 .navlink--right {
