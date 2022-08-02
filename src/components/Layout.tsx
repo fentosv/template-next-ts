@@ -7,15 +7,14 @@ import Footer from '@components/Footer';
 interface Props {
     children: ReactNode;
     navbarClass?: string;
-    footerClass?: string;
 }
 
-export default function Layout({ children, navbarClass, footerClass }: Props) {
+export default function Layout({ children, navbarClass }: Props) {
     return (
         <>
             <Navbar navbarClass={navbarClass} />
             <main className='body'>{children}</main>
-            <Footer footerClass={footerClass} />
+            <Footer />
         </>
     )
 }
