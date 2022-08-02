@@ -3,7 +3,7 @@ import React from 'react'
 import s from './Footer.module.scss'
 import GitHub from '@components/icons/GitHub';
 
-const GitHub_Project_Url = 'https://github.com/fentosv/XXXXXXXXXXXXXXXXXXXXXXXXXXX'
+const GitHub_Project_Url = 'https://github.com/fentosv/' + process.env.NEXT_PUBLIC_GITHUB_PROJECT_NAME
 
 function Footer() {
     return (

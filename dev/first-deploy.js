@@ -6,7 +6,7 @@ const { commitNameChecker } = require('./commit-name')
 
 const GITHUB_EMAIL = process.env.GITHUB_EMAIL
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME
-const GITHUB_PROJECT_URL = process.env.GITHUB_PROJECT_URL
+const GITHUB_PROJECT_URL = 'https://github.com/fentosv/' + process.env.NEXT_PUBLIC_GITHUB_PROJECT_NAME + '.git'
 const GITHUB_COMMIT_NAME = process.env.GITHUB_COMMIT_NAME
 
 const console_run = async () => {
