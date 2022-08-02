@@ -76,7 +76,7 @@ const send_discord = () => {
 const run_discord = (success) => {
     if (!success) console.log("\nSomething went wrong. Check if you are logged into Git.\n");
     if (DISCORD_WEBHOOK_URL && DISCORD_USERNAME) {
-        // send_discord(version)
+        send_discord(version)
         console.log('\nDiscord sent');
 
     } else {
